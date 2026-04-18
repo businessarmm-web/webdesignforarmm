@@ -266,8 +266,8 @@ h1,
   z-index:1;
   overflow:hidden;
   background:
-    linear-gradient(180deg, rgba(2,4,9,.08), rgba(2,4,9,.42) 58%, rgba(2,4,9,.72)),
-    linear-gradient(90deg, rgba(2,4,9,.52), rgba(4,20,44,.18), rgba(2,4,9,.52)),
+    linear-gradient(180deg, rgba(2,4,9,.04), rgba(2,4,9,.24) 58%, rgba(2,4,9,.48)),
+    linear-gradient(90deg, rgba(2,4,9,.34), rgba(4,20,44,.1), rgba(2,4,9,.34)),
     url("assets/hero-gym.jpg") center center/cover no-repeat;
   border-bottom:1px solid rgba(143,204,255,.2);
 }
@@ -276,8 +276,8 @@ h1,
   position:absolute;
   inset:0;
   background:
-    radial-gradient(ellipse at 50% 0%, rgba(126,227,255,.18), transparent 36%),
-    linear-gradient(180deg, rgba(2,4,9,.04), rgba(2,4,9,.42));
+    radial-gradient(ellipse at 50% 0%, rgba(126,227,255,.14), transparent 36%),
+    linear-gradient(180deg, rgba(2,4,9,.02), rgba(2,4,9,.24));
   opacity:1;
 }
 .hero-panorama::after{
@@ -634,7 +634,6 @@ tbody tr:nth-child(even){background:rgba(255,255,255,.035)}
   .hero-content{min-height:calc(100vh - var(--header))}
   .hero-main{padding:58px 0 44px}
   .hero h1{font-size:clamp(2.7rem, 11vw, 4.8rem)}
-  .hero-copy{display:none}
   .hero .kicker{
     font-size:.72rem;
     line-height:1.45;
