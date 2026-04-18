@@ -266,8 +266,8 @@ h1,
   z-index:1;
   overflow:hidden;
   background:
-    linear-gradient(180deg, rgba(2,4,9,.12), rgba(2,4,9,.58) 58%, rgba(2,4,9,.96)),
-    linear-gradient(90deg, rgba(2,4,9,.78), rgba(4,20,44,.28), rgba(2,4,9,.78)),
+    linear-gradient(180deg, rgba(2,4,9,.08), rgba(2,4,9,.42) 58%, rgba(2,4,9,.72)),
+    linear-gradient(90deg, rgba(2,4,9,.52), rgba(4,20,44,.18), rgba(2,4,9,.52)),
     url("assets/hero-gym.jpg") center center/cover no-repeat;
   border-bottom:1px solid rgba(143,204,255,.2);
 }
@@ -277,7 +277,7 @@ h1,
   inset:0;
   background:
     radial-gradient(ellipse at 50% 0%, rgba(126,227,255,.18), transparent 36%),
-    linear-gradient(180deg, rgba(2,4,9,.08), rgba(2,4,9,.74));
+    linear-gradient(180deg, rgba(2,4,9,.04), rgba(2,4,9,.42));
   opacity:1;
 }
 .hero-panorama::after{
@@ -603,9 +603,16 @@ tbody tr:nth-child(even){background:rgba(255,255,255,.035)}
 }
 .footer-inner{
   display:flex;
+  align-items:flex-start;
   justify-content:space-between;
   gap:18px;
   flex-wrap:wrap;
+}
+.footer-credits{
+  flex:1 1 420px;
+  font-size:.9rem;
+  line-height:1.55;
+  text-align:center;
 }
 .footer-inner a{color:#d8efff}
 
@@ -618,18 +625,21 @@ tbody tr:nth-child(even){background:rgba(255,255,255,.035)}
     padding:10px 0;
   }
   .primary-nav{
-    order:3;
-    width:100%;
-    justify-content:center;
-    border-top:1px solid rgba(143,204,255,.14);
+    display:none;
   }
-  .primary-nav a{font-size:.78rem;padding:0 10px}
   .join-link{min-height:46px;padding:0 18px}
   .brand img{height:60px}
   .site-header.is-compact .brand img{height:48px}
   main{padding-top:0}
   .hero-content{min-height:calc(100vh - var(--header))}
-  .hero-main{padding:72px 0 54px}
+  .hero-main{padding:58px 0 44px}
+  .hero h1{font-size:clamp(2.7rem, 11vw, 4.8rem)}
+  .hero-copy{display:none}
+  .hero .kicker{
+    font-size:.72rem;
+    line-height:1.45;
+    margin-bottom:14px;
+  }
   .section-head,
   .split{grid-template-columns:1fr;display:grid}
   .plan-grid,
@@ -646,21 +656,19 @@ tbody tr:nth-child(even){background:rgba(255,255,255,.035)}
   .about-hero-grid{grid-template-columns:1fr;gap:34px}
   .about-hero .page-title{font-size:clamp(2.8rem, 12vw, 4.8rem)}
   .about-video-frame{width:min(74vw, 340px)}
-  .hero-stats{display:grid;grid-template-columns:1fr 1fr}
+  .hero-stats{display:none}
   .section{padding:66px 0}
 }
 
 @media (max-width:560px){
   h1,
   .page-title{font-size:3rem}
-  .hero-main{padding:64px 0 42px}
-  .hero-stats{grid-template-columns:1fr}
+  .hero-main{padding:48px 0 34px}
+  .hero h1{font-size:clamp(2.45rem, 12vw, 3.7rem)}
   .stat{min-width:0}
   .guest-pass a{letter-spacing:.1em}
   .section-head h2{font-size:2.2rem}
   .brand-mark{display:none}
-  .primary-nav{gap:0}
-  .primary-nav a{letter-spacing:.08em}
   .equipment,
   .testimonial,
   .feature-panel{padding:24px}
